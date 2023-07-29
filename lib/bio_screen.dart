@@ -57,7 +57,7 @@ class BioScreen extends StatelessWidget {
               //   fit: BoxFit.cover,
               // ),
             ),
-            SizedBox(height: 24,),
+            SizedBox(height: 24),
             Text(
                 ManagerStrings.userName,
               style: TextStyle(
@@ -65,6 +65,15 @@ class BioScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            SizedBox(height: 12),
+            Text(
+              ManagerStrings.flutterCourse,
+              style: TextStyle(
+                fontFamily: 'Georama',
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Divider(endIndent: 60, indent: 60, height: 14, thickness: 2,),
           ],
         )
 
