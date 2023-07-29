@@ -34,6 +34,7 @@ class BioScreen extends StatelessWidget {
       ),
       extendBodyBehindAppBar: true,
       body: Container(
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: AlignmentDirectional.topStart,
@@ -44,6 +45,29 @@ class BioScreen extends StatelessWidget {
             ],
           ),
         ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 64,
+              backgroundImage: AssetImage('assets/images/avatar-2.png'),
+              // child: Image.network(
+              //     'https://img.freepik.com/premium-vector/young-smiling-man-avatar-man-with-brown-beard-mustache-hair-wearing-yellow-sweater-sweatshirt-3d-vector-people-character-illustration-cartoon-minimal-style_365941-860.jpg',
+              //
+              //   fit: BoxFit.cover,
+              // ),
+            ),
+            SizedBox(height: 24,),
+            Text(
+                ManagerStrings.userName,
+              style: TextStyle(
+                fontFamily: 'Georama',
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        )
+
       ),
     );
   }
